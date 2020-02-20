@@ -6,7 +6,6 @@
   <title>Yoga Fulifilled</title>
   <meta name="description" content="Yoga Fulifilled">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <script src="https://apis.google.com/js/platform.js"></script>
   <style>
     .container {
       width: 75%;
@@ -36,7 +35,7 @@
       width: 40%;
       height:auto;
       float: left;
-      margin-top: 100px;
+      margin-top: 50px;
     }
     .menu-center-col img{
       margin-left: auto;
@@ -82,6 +81,17 @@
       min-height: 90px;
       text-align: center;
     }
+    .content {
+      overflow: hidden;
+    }
+    .channels {
+      margin-left: auto;
+      margin-right: auto;
+      width: 167px;
+    }
+    .pull-left {
+      float: left;
+    }
   </style>
 </head>
 
@@ -90,7 +100,7 @@
     <div class="header">
       <h1>Yoga Fulfilled</h1>
     </div>
-    <div>
+    <div class="content">
       <div class="menu-side-col">
         <!--
         <div class="menu-item menu-item-top-left">
@@ -123,9 +133,12 @@
       -->
       </div>
     </div>
-    <div>
-      <div class="g-ytsubscribe" data-channelid="UCv9AZA6MjS91xZQ8TYBAY0w" data-layout="full" data-count="hidden"></div>
+    <div class="channels">
+      <div class="g-ytsubscribe pull-left" data-channelid="UCv9AZA6MjS91xZQ8TYBAY0w" data-layout="full" data-count="hidden"></div>
+      <a href="https://twitter.com/YogaFulfilled?ref_src=twsrc%5Etfw" class="twitter-follow-button pull-left" data-size="large" data-show-count="false">Follow @YogaFulfilled</a>
     </div>
   </div>
+  <script src="https://apis.google.com/js/platform.js"></script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </body>
 </html>
