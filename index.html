@@ -13,6 +13,7 @@
       margin-left: auto;
       margin-right: auto;
       padding-top: 30px;
+      overflow: hidden;
     }
     .header {
       margin-left: auto;
@@ -87,9 +88,10 @@
     .channels {
       margin-left: auto;
       margin-right: auto;
-      width: 167px;
+      overflow: hidden;
     }
-    .pull-left {
+    .channel {
+      margin: 0px 5px;
       float: left;
     }
   </style>
@@ -134,11 +136,24 @@
       </div>
     </div>
     <div class="channels">
-      <div class="g-ytsubscribe pull-left" data-channelid="UCv9AZA6MjS91xZQ8TYBAY0w" data-layout="full" data-count="hidden"></div>
-      <a href="https://twitter.com/YogaFulfilled?ref_src=twsrc%5Etfw" class="twitter-follow-button pull-left" data-size="large" data-show-count="false">Follow @YogaFulfilled</a>
+      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0"></script>
+      <script src="https://apis.google.com/js/platform.js"></script>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <div class="channel" style="width: 210px;">
+        <div class="fb-page" data-href="https://www.facebook.com/pages/category/Yoga-Studio/Yoga-Fulfilled-108464414031547/" data-tabs="" data-width="210" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false">
+          <blockquote cite="https://www.facebook.com/pages/category/Yoga-Studio/Yoga-Fulfilled-108464414031547/" class="fb-xfbml-parse-ignore">
+            <a href="https://www.facebook.com/pages/category/Yoga-Studio/Yoga-Fulfilled-108464414031547/">Yoga Fulfilled</a>
+          </blockquote>
+        </div>
+      </div>
+      <div class="channel">
+        <div class="g-ytsubscribe" data-channelid="UCv9AZA6MjS91xZQ8TYBAY0w" data-layout="full" data-count="hidden"></div>
+      </div>
+      <div class="channel">
+        <a href="https://twitter.com/YogaFulfilled?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @YogaFulfilled</a>
+      </div>
     </div>
   </div>
-  <script src="https://apis.google.com/js/platform.js"></script>
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  <div id="fb-root"></div>
 </body>
 </html>
