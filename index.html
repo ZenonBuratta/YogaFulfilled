@@ -12,6 +12,13 @@
 	  font-family: Roboto;
 	  position: absolute;
 	}
+	
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+		body {
+			position: relative;
+		}
+	}
+	
 	.color-panel {
 		background-image: linear-gradient( 180deg,  rgba(21,13,107,1) 1.1%, rgba(188,16,80,1) 130.5% );
 		margin: 0 -15px 0 -15px;
@@ -34,14 +41,25 @@
 		text-align: center;
 	}
 	
+	.third-party-content {
+		padding-top: 20px;
+	}
+	
 	@media only screen and (max-width: 768px) {
 	  /* For mobile phones: */
 	  [class*="col-"] {
 		width: 100%;
 	  }
-	  .third-party-content {
-		padding-top: 20px;
 	}
+	
+	.facebook {
+		margin-bottom: 50px;
+		overflow: hidden;
+	}
+	
+	.youtube {
+		min-height: 335px;
+		margin-bottom: 30px;
 	}
 	
 	@media only screen and (min-width: 768px) {
@@ -76,8 +94,6 @@
 </head>
 
 <body>
-	<div id="fb-root"></div>
-	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0"></script>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 	 <a class="navbar-brand" href="#">
     <img src="images/logo-black.png" width="250" alt="" loading="lazy">
@@ -124,10 +140,10 @@
 	</div>
 	
 	<div class="row third-party-content">
-		<div class="col-md-4">
-			<div class="fb-page" data-href="https://www.facebook.com/pages/category/Yoga-Studio/Yoga-Fulfilled-108464414031547/" data-tabs="timeline,messages" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/pages/category/Yoga-Studio/Yoga-Fulfilled-108464414031547/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/pages/category/Yoga-Studio/Yoga-Fulfilled-108464414031547/">Yoga Fulfilled</a></blockquote></div>
+		<div class="col-md-4 facebook">
+			<div class="fb-page d-flex justify-content-center" data-href="https://www.facebook.com/pages/category/Yoga-Studio/Yoga-Fulfilled-108464414031547/" data-tabs="timeline,messages" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/pages/category/Yoga-Studio/Yoga-Fulfilled-108464414031547/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/pages/category/Yoga-Studio/Yoga-Fulfilled-108464414031547/">Yoga Fulfilled</a></blockquote></div>
 		</div>
-		<div class="col-md-8">
+		<div class="col-md-8 youtube">
 			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?list=PLKXVrgWnSuijtz2tIH0gim62grdu6UKGz" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 		</div>
 	<div>
@@ -135,5 +151,17 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script>
+		var facebook = document.getElementsByClassName('facebook');
+		
+		if (facebook && facebook.length > 0)
+		{
+			var facebookSize = facebook[0].offsetWidth;
+			document.getElementsByClassName("fb-page")[0].setAttribute('data-width', Math.min(facebookSize, 500));
+
+		}		
+	</script>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0"></script>
 </body>
 </html>
