@@ -2,158 +2,105 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <title>Yoga Fulifilled</title>
   <meta name="description" content="Yoga Fulifilled">
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <style>
-    .container {
-      width: 75%;
-      height: 100%;
-      margin-left: auto;
-      margin-right: auto;
-      padding-top: 30px;
-      overflow: hidden;
-    }
-    .header {
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-      text-align: center;
-      border: 1px black solid;
-      padding: 10px;
-    }
-    .menu-side-col {
-      width: 30%;
-      height:50%;
-      height:100px;
-      float: left;
-      margin-top: 50px;
-      font-family: Roboto;
-      font-size: 27px;
-    }
-    .menu-center-col {
-      width: 40%;
-      height:auto;
-      float: left;
-      margin-top: 50px;
-    }
-    .menu-center-col img{
-      margin-left: auto;
-      margin-right: auto;
-      border-radius: 250px;
-      display: block;
-    }
-    .menu-item.menu-item-top-left {
-      -ms-transform: rotate(25deg); /* IE 9 */
-      transform: rotate(25deg); /* Standard syntax */
-      margin-right: 20px;
-      border-color: red;
-      margin-top: 0px!important;
-    }
-    .menu-item.menu-item-bottom-left {
-      -ms-transform: rotate(-25deg); /* IE 9 */
-      transform: rotate(-25deg); /* Standard syntax */
-      margin-right: 20px;
-      border-color: red;
-    }
-    .menu-item.menu-item-top-right {
-      -ms-transform: rotate(-25deg); /* IE 9 */
-      transform: rotate(-25deg); /* Standard syntax */
-      margin-right: 20px;
-      border-color: red;
-      margin-top: 0px!important;
-    }
-    .menu-item.menu-item-bottom-right {
-      -ms-transform: rotate(25deg); /* IE 9 */
-      transform: rotate(25deg); /* Standard syntax */
-      margin-right: 20px;
-      border-color: red;
-    }
-    .menu-item {
-      border: 3px solid;
-      font-size: 25px;
-      font-family: 'Roboto', sans-serif;
-      font-weight: bold;
-      padding: 6px 40px;
-      margin: 80px 0px;
-      float: right;
-      width: 100%;
-      min-height: 90px;
-      text-align: center;
-    }
-    .content {
-      overflow: hidden;
-    }
-    .channels {
-      margin-left: auto;
-      margin-right: auto;
-      overflow: hidden;
-    }
-    .channel {
-      margin: 0px 5px;
-      float: left;
-    }
+	body {
+	  font-family: Roboto;
+	}
+	.color-panel {
+		background-image: linear-gradient( 180deg,  rgba(21,13,107,1) 1.1%, rgba(188,16,80,1) 130.5% );
+		height: 550px;
+		margin: 0 -15px 0 -15px;
+		padding: 0 15px 0 15px;
+	}
+	.header-bar {
+		font-family: Roboto;
+		font-size: 27px;
+		color: white;
+		padding: 50px 200px;
+	}
+	.header-logo {
+		padding-bottom: 50px;
+	}
+	.yoga-sitting {
+		max-width: 280px;
+	}
+	.header-text-panel {
+		padding-top: 50px;
+		text-align: center;
+	}
+	.third-party-content {
+		padding: 75px 100px;
+	}
+	
   </style>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://apis.google.com/js/platform.js"></script>
 </head>
 
 <body>
-	<div class="container">
-    <div class="header">
-      <h1>Yoga Fulfilled</h1>
-    </div>
-    <div class="content">
-      <div class="menu-side-col">
-        <!--
-        <div class="menu-item menu-item-top-left">
-          <p>Free online classes</p>
-        </div>
-        <div class="menu-item">
-          <p>Contact me</p>
-        </div>
-        <div class="menu-item menu-item-bottom-left">
-          <p>Blogs</p>
-        </div>
-      -->
-      <p>Welcome to Yoga Fulfilled, and the start of your yoga journey. Our aim here is to do as the name suggests, provide you with a fulfilling yoga experiance.</p>
-      </div>
-      <div class="menu-center-col">
-        <img src="images/yoga-sitting-posejpg.jpg" />
-      </div>
-      <div class="menu-side-col">
-        <p>While we work on getting the site all setup, you can come and follow me on Facebook, YouTube or twitter, links below.</p>
-        <!--
-        <div class="menu-item menu-item-top-right">
-          <p>Book private lessons in Swindon</p>
-        </div>
-        <div class="menu-item">
-          <p>Discussions or Support on Facebook</p>
-        </div>
-        <div class="menu-item menu-item-bottom-right">
-          <p>Upcoming lessons</p>
-        </div>
-      -->
-      </div>
-    </div>
-    <div class="channels">
-      <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v6.0"></script>
-      <script src="https://apis.google.com/js/platform.js"></script>
-      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      <div class="channel" style="width: 210px;">
-        <div class="fb-page" data-href="https://www.facebook.com/pages/category/Yoga-Studio/Yoga-Fulfilled-108464414031547/" data-tabs="" data-width="210" data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false">
-          <blockquote cite="https://www.facebook.com/pages/category/Yoga-Studio/Yoga-Fulfilled-108464414031547/" class="fb-xfbml-parse-ignore">
-            <a href="https://www.facebook.com/pages/category/Yoga-Studio/Yoga-Fulfilled-108464414031547/">Yoga Fulfilled</a>
-          </blockquote>
-        </div>
-      </div>
-      <div class="channel">
-        <div class="g-ytsubscribe" data-channelid="UCv9AZA6MjS91xZQ8TYBAY0w" data-layout="full" data-count="hidden"></div>
-      </div>
-      <div class="channel">
-        <a href="https://twitter.com/YogaFulfilled?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @YogaFulfilled</a>
-      </div>
-    </div>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v7.0"></script>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	 <a class="navbar-brand" href="#">
+    <img src="images/logo-black.png" width="250" alt="" loading="lazy">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+	<ul class="navbar-nav ml-auto">
+		<li>
+			<div class="g-ytsubscribe" data-channelid="UCv9AZA6MjS91xZQ8TYBAY0w" data-layout="default" data-count="default"></div>
+		</li>
+		<li>
+		<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<a href="https://twitter.com/YogaFulfilled?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @YogaFulfilled</a>
+		</li>
+	</ul>
   </div>
-  <div id="fb-root"></div>
+</nav>
+	<div class="container-fluid">
+	<div class="color-panel header-bar">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="images/logo-white.png" class="mx-auto d-block header-logo" alt="Yoga Fulfilled"/>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4 header-text-panel">
+				<p>Welcome to Yoga Fulfilled, and the start of your yoga journey. Our aim here is to do as the name suggests, provide you with a fulfilling yoga experiance.</p>
+			</div>
+			<div class="col-md-4">
+				<img src="images/yoga-sitting-posejpg.jpg" class="mx-auto d-block yoga-sitting"/>
+			</div>
+			<div class="col-md-4 header-text-panel">
+				<p>While we work on getting the site all setup, you can come and follow me on Facebook or YouTube, details below.</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row third-party-content">
+		<div class="col-md-4">
+			<div class="fb-page" data-href="https://www.facebook.com/pages/category/Yoga-Studio/Yoga-Fulfilled-108464414031547/" data-tabs="timeline,messages" data-width="500" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/pages/category/Yoga-Studio/Yoga-Fulfilled-108464414031547/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/pages/category/Yoga-Studio/Yoga-Fulfilled-108464414031547/">Yoga Fulfilled</a></blockquote></div>
+		</div>
+		<div class="col-md-8">
+			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?list=PLKXVrgWnSuijtz2tIH0gim62grdu6UKGz" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+	<div>
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
 </html>
